@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BilimHub — Bilim olish platformasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>BilimHub</h1>
+        <p>Bilim — kelajak kaliti!</p>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. SINF TANLASH -->
+        <section id="classSection" class="panel">
+            <h2>Bilim olish sari ilk qadam!</h2>
+            <p class="subtitle">
+                O‘zingizga mos sinfni tanlang va o‘rganishni boshlang.
+            </p>
+
+            <h3>Sinfingizni tanlang:</h3>
+
+            <div class="classes">
+                <button onclick="selectGrade(3)">3-sinf</button>
+                <button onclick="selectGrade(4)">4-sinf</button>
+                <button onclick="selectGrade(5)">5-sinf</button>
+                <button onclick="selectGrade(6)">6-sinf</button>
+                <button onclick="selectGrade(7)">7-sinf</button>
+                <button onclick="selectGrade(8)">8-sinf</button>
+            </div>
+        </section>
+
+        <!-- 2. FAN TANLASH -->
+        <section id="subjectSection" class="panel" style="display:none;">
+            <h2 id="selectedGrade"></h2>
+            <h3>Fanlardan birini tanlang:</h3>
+
+            <div class="classes">
+                <button onclick="selectSubject('math')">
+                    📐 Matematika
+                </button>
+
+                <button onclick="selectSubject('english')">
+                    🌐 Ingliz tili
+                </button>
+            </div>
+        </section>
+
+        <!-- 3. MAVZU TANLASH -->
+        <section id="lessonSection" class="panel" style="display:none;">
+            <h2 id="lessonTitle"></h2>
+            <p id="lessonDescription" class="subtitle"></p>
+
+            <button
+                id="startLessonButton"
+                class="primary-button"
+                onclick="startLesson()">
+                Darsni boshlash →
+            </button>
+
+            <!-- 4. DARSLAR -->
+            <div id="lessonContent" style="display:none;">
+
+                <h2 id="realLessonTitle">Dars mavzusi</h2>
+
+                <div class="lesson-part">
+                    <h3>📖 1. Mavzuni o‘rganamiz</h3>
+                    <div id="lessonExplanation"></div>
+                </div>
+
+                <div class="lesson-part">
+                    <h3>✏️ 2. Ishlangan misollar</h3>
+                    <div id="lessonExamples"></div>
+                </div>
+<div class="lesson-part">
+    <h3>🧠 4. Bilimingizni sinab ko‘ring</h3>
+
+    <p>10 ta savolga javob bering. Har bir to‘g‘ri javob 1 ball!</p>
+
+    <div id="quizContainer"></div>
+
+    <button
+        id="finishQuizButton"
+        class="primary-button"
+        onclick="finishQuiz()">
+        Testni yakunlash
+    </button>
+
+    <div id="quizResult"></div>
+</div>
+                <div class="lesson-part">
+                    <h3>📝 3. Mustaqil mashqlar</h3>
+                    <div id="lessonExercises"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 BilimHub. Barcha huquqlar himoyalangan.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5ff;
+    color: #172554;
+    min-height: 100vh;
+}
+
+.header {
+    background: #ffffff;
+    padding: 22px 15px;
+    text-align: center;
+    border-bottom: 3px solid #3157d5;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.header h1 {
+    color: #2447bd;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.header p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.panel {
+    width: 100%;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.panel h2 {
+    color: #3157d5;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.panel h3 {
+    margin: 25px 0 18px;
+    font-size: 18px;
+}
+
+.subtitle {
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.classes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    background: white;
+    color: #3157d5;
+    border: 1px solid #d5dfff;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3157d5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.primary-button {
+    background: #2949bd;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin: 15px 0 10px;
+}
+
+.primary-button:hover {
+    background: #193795;
+}
+
+#lessonContent {
+    width: 100%;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+#lessonContent h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.lesson-part {
+    background: #f3f6ff;
+    padding: 22px;
+    margin: 18px 0;
+    border-radius: 14px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+.lesson-part h3 {
+    color: #3157d5;
+    margin: 0 0 15px;
+    font-size: 18px;
+}
+
+.lesson-part p {
+    color: #475569;
+    margin: 8px 0;
+}
+
+.lesson-part li {
+    margin: 8px 0 8px 22px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    .panel {
+        padding: 25px 16px;
+    }
+
+    .panel h2 {
+        font-size: 23px;
+    }
+
+    .classes {
+        gap: 9px;
+    }
+
+    button {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .lesson-part {
+        padding: 16px;
+    }
+}
+
+.exercise {
+    background: white;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border: 1px solid #dce5ff;
+}
+
+.exercise input {
+    width: 150px;
+    max-width: 100%;
+    padding: 11px;
+    margin: 10px 8px 10px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.exercise button {
+    margin: 5px 4px;
+}
+
+.exercise p {
+    line-height: 1.6;
+}
+
+#result {
+    color: #3157d5;
+    margin-top: 20px;
+    text-align: center;
+}
